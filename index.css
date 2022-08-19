@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Neonderthaw&family=Quicksand:wght@300&family=Roboto&family=Square+Peg&display=swap');
 
 		::-webkit-scrollbar{
@@ -86,13 +87,40 @@
 
 
 
-	.grid-text{
-			font-size: 25px; font-weight:500; position: relative; left: 1.3em; top: -35px;
-	}
+		.div-grid::before{
+        font-size: 24px;
+        color: white;
+        content: "Ver";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, #10d3ff9e, #06699973);
+        transform: scale(0) ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 11px;
+        z-index: 2;
+       }
 
-	.grid-text-xiaomi{
-		font-size: 25px; font-weight:500; position: relative; left: 1.9em; top: -35px;
-	}
+
+	.grid-3::before{
+       		content: 'IPhone 13 Q45';
+       }
+.grid-2::before{
+       		content: 'IPhone XR Q45.';
+       }
+.grid-1::before{
+       		content: 'IPhone 10 Q45';
+       }
+
+
+       	.div-grid:hover::before{
+        transform: scale(1);
+        transition: transform .56s;
+       } 
 
 
 		.D-2{
